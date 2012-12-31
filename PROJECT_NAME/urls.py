@@ -1,14 +1,16 @@
 from django.conf.urls import patterns, include, url
 
-import apps.coming_soon.views as coming_soon
+#import apps.coming_soon.views as coming_soon
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-    # Coming soon page
-    url(r'^gerd/$', coming_soon.ComingSoon.as_view(), name="coming_soon"),
+    # Examples:
+    # url(r'^$', 'testing.views.home', name='home'),
+    # url(r'^testing/', include('testing.foo.urls')),
+    # url(r'^gerd/$', coming_soon.ComingSoon.as_view(), name="coming_soon"),
     
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

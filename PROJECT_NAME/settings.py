@@ -71,10 +71,10 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'omeopath.urls'
+ROOT_URLCONF = 'PROJECT_NAME.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'omeopath.wsgi.application'
+WSGI_APPLICATION = 'PROJECT_NAME.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
