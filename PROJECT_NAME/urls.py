@@ -1,4 +1,6 @@
 from django.conf.urls import patterns, include, url
+#from django.views.generic import TemplateView
+
 
 #import apps.coming_soon.views as coming_soon
 
@@ -8,7 +10,7 @@ from django.conf.urls import patterns, include, url
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'testing.views.home', name='home'),
+    # url(r'^$', TemplateView.as_view(template_name = "project_base.html"), name='home'),
     # url(r'^testing/', include('testing.foo.urls')),
     # url(r'^gerd/$', coming_soon.ComingSoon.as_view(), name="coming_soon"),
     
