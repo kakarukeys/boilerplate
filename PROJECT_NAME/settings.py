@@ -29,13 +29,13 @@ LANGUAGES = (('en', gettext('English')),)
 PROJECT_PATH = os.path.realpath(os.path.dirname(__file__))
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
-# Example: "/home/media/media.lawrence.com/media/"
+# Example: "/var/www/example.com/media/"
 MEDIA_ROOT = os.path.join(PROJECT_PATH, 'media/')
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
-# Example: "/home/media/media.lawrence.com/static/"
+# Example: "/var/www/example.com/static/"
 STATIC_ROOT = os.path.join(PROJECT_PATH, 'static/')
 
 # Additional locations of static files
@@ -100,6 +100,8 @@ INSTALLED_APPS = (
     
 )
 
+SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
+
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
 # the site admins on every HTTP 500 error when DEBUG=False.
@@ -118,7 +120,7 @@ LOGGING = {
     },
     'filters': {
         'require_debug_false': {
-            '()': 'django.utils.log.RequireDebugFalse',
+            '()': 'django.utils.log.RequireDebugFalse'
         }
     },
     'handlers': {
